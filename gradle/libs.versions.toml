@@ -10,6 +10,28 @@ material = "1.12.0"
 activity = "1.8.0"
 constraintlayout = "2.1.4"
 
+#Retrofit
+retrofitVersion = "2.11.0"
+
+#Gson
+gsonVersion = "2.11.0"
+
+#KSP
+kspVersion = "1.9.0-1.0.13"
+
+#DI
+hiltVersion = "2.51.1"
+
+#Google
+googleServicesVersion = "4.4.2"
+
+#Firebase
+firebaseBomVersion = "33.8.0"
+
+#Worker
+workRuntimeVersion = "2.8.1"
+hiltWork = "1.2.0"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -20,7 +42,35 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 
+#Retrofit
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion"}
+retrofit-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitVersion"}
+
+#Gson
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gsonVersion"}
+
+#DI
+dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltVersion"}
+dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltVersion"}
+
+#Firebase
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBomVersion"}
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore"}
+
+#Worker
+work-runtime = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "workRuntimeVersion"}
+androidx-hilt-work = { group = "androidx.hilt", name = "hilt-work", version.ref = "hiltWork" }
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+#KSP
+devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "kspVersion"}
+
+#DI
+dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hiltVersion"}
+
+#Google
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServicesVersion"}
 
