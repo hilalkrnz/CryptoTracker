@@ -5,6 +5,8 @@ import com.hilalkara.cryptotracker.data.worker.ChildWorkerFactory
 import com.hilalkara.cryptotracker.data.worker.CoinSyncWorker
 import com.hilalkara.cryptotracker.data.worker.CoinSyncWorkerFactory
 import com.hilalkara.cryptotracker.data.worker.CustomWorkerFactory
+import com.hilalkara.cryptotracker.data.worker.PriceChangeWorker
+import com.hilalkara.cryptotracker.data.worker.PriceChangeWorkerFactory
 import com.hilalkara.cryptotracker.di.annotation.WorkerKey
 import dagger.Binds
 import dagger.Module
@@ -23,4 +25,9 @@ abstract class WorkerModule {
     @IntoMap
     @WorkerKey(CoinSyncWorker::class)
     abstract fun bindCoinSyncWorkerFactory(factory: CoinSyncWorkerFactory): ChildWorkerFactory
+
+    @Binds
+    @IntoMap
+    @WorkerKey(PriceChangeWorker::class)
+    abstract fun bindPriceChangeWorkerFactory(factory: PriceChangeWorkerFactory): ChildWorkerFactory
 }
