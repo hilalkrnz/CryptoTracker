@@ -1,6 +1,8 @@
 package com.hilalkara.cryptotracker.di.repository
 
+import com.hilalkara.cryptotracker.data.repository.AuthRepositoryImpl
 import com.hilalkara.cryptotracker.data.repository.CryptoRepositoryImpl
+import com.hilalkara.cryptotracker.domain.AuthRepository
 import com.hilalkara.cryptotracker.domain.CryptoRepository
 import dagger.Binds
 import dagger.Module
@@ -17,4 +19,10 @@ abstract class RepositoryModule {
     abstract fun bindSerenityRepository(
         repositoryImpl: CryptoRepositoryImpl
     ): CryptoRepository
+
+    @Binds
+    @Singleton
+    abstract fun bindAuthRepository(
+        authRepositoryImpl: AuthRepositoryImpl
+    ): AuthRepository
 }

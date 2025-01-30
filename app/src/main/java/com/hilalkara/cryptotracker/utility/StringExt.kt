@@ -5,6 +5,7 @@ import java.util.Locale
 
 const val SERVER_TIME_FORMAT = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
 const val SIMPLE_FORMAT_PATTERN = "dd.MM.yyyy, HH:mm:ss"
+const val SIMPLE_YEAR_FORMAT_PATTERN = "dd MMMM yyyy"
 
 val String.Companion.CURRENCY: String
     get() = "usd"

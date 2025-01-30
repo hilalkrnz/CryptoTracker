@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.hilalkara.cryptotracker" />
+                  <option name="mobileSdkAppId" value="1:920617739572:android:206a784ac20280ff5d7161" />
+                  <option name="projectId" value="cryptotracker-d52c5" />
+                  <option name="projectNumber" value="920617739572" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

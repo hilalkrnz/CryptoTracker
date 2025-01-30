@@ -8,9 +8,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.work.WorkInfo
-import com.hilalkara.cryptotracker.MainActivity
 import com.hilalkara.cryptotracker.R
 import com.hilalkara.cryptotracker.databinding.ActivitySplashBinding
+import com.hilalkara.cryptotracker.ui.MainActivity
 import com.hilalkara.cryptotracker.utility.viewBinding
 import dagger.hilt.android.AndroidEntryPoint
 

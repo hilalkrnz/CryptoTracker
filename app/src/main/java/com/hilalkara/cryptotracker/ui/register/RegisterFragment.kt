@@ -1,4 +1,4 @@
-package com.hilalkara.cryptotracker.ui.profile
+package com.hilalkara.cryptotracker.ui.register
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,11 +14,10 @@ import com.hilalkara.cryptotracker.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class ProfileFragment : Fragment() {
-
+class RegisterFragment : Fragment() {
     private lateinit var composeView: ComposeView
 
-    private val viewModel by viewModels<ProfileViewModel>()
+    private val viewModel by viewModels<RegisterViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -34,18 +33,28 @@ class ProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         composeView.setContent {
-            val profileState by viewModel.profileState.collectAsState()
-            ProfileScreen(
-                profileState = profileState,
-                onLogoutClick = { viewModel.logOut() },
-                onGoToSignIn = { goToLogin() },
+            val registerState by viewModel.registerState.collectAsState()
+            RegisterScreen(
+                registerState = registerState,
+                onRegisterClick = { email, password ->
+                    registerAccount(email, password)
+                },
+                onNavigateToSignIn = { goToSignIn() },
+                onNavigateToHome = { goToHome() },
                 onDismissError = { viewModel.clearError() }
             )
         }
     }
 
-    private fun goToLogin() {
-        findNavController().navigate(R.id.loginFragment)
+    private fun registerAccount(email: String, password: String) {
+        viewModel.register(email, password)
     }
 
+    private fun goToSignIn() {
+        findNavController().navigate(RegisterFragmentDirections.actionRegisterFragmentToLoginFragment())
+    }
+
+    private fun goToHome() {
+        findNavController().navigate(R.id.registerToMainGraph)
+    }
 }

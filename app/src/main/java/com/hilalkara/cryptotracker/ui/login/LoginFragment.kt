@@ -1,4 +1,4 @@
-package com.hilalkara.cryptotracker.ui.profile
+package com.hilalkara.cryptotracker.ui.login
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,14 +11,15 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.hilalkara.cryptotracker.R
+import com.hilalkara.cryptotracker.ui.search.SearchViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class ProfileFragment : Fragment() {
+class LoginFragment : Fragment() {
 
     private lateinit var composeView: ComposeView
 
-    private val viewModel by viewModels<ProfileViewModel>()
+    private val viewModel by viewModels<LoginViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -34,18 +35,28 @@ class ProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         composeView.setContent {
-            val profileState by viewModel.profileState.collectAsState()
-            ProfileScreen(
-                profileState = profileState,
-                onLogoutClick = { viewModel.logOut() },
-                onGoToSignIn = { goToLogin() },
+            val loginState by viewModel.loginState.collectAsState()
+            LoginScreen(
+                loginState = loginState,
+                onLoginClick = { email, password ->
+                    loginAccount(email, password)
+                },
+                onNavigateToRegister = { goToRegister() },
+                onNavigateToHome = { goToHome() },
                 onDismissError = { viewModel.clearError() }
             )
         }
     }
 
-    private fun goToLogin() {
-        findNavController().navigate(R.id.loginFragment)
+    private fun loginAccount(email: String, password: String) {
+        viewModel.login(email, password)
     }
 
+    private fun goToRegister() {
+        findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToRegisterFragment())
+    }
+
+    private fun goToHome() {
+        findNavController().navigate(R.id.loginToMainGraph)
+    }
 }

@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.hilalkara.cryptotracker.ui.search.SearchFragment"
-        android:label="fragment_search"
+        android:label="Home"
         tools:layout="@layout/fragment_search">
         <action
             android:id="@+id/action_searchFragment_to_detailFragment"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/favoriteFragment"
         android:name="com.hilalkara.cryptotracker.ui.favorite.FavoriteFragment"
-        android:label="fragment_favorite"
+        android:label="Favorites"
         tools:layout="@layout/fragment_favorite">
         <action
             android:id="@+id/action_favoriteFragment_to_detailFragment"
@@ -26,12 +26,11 @@
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.hilalkara.cryptotracker.ui.profile.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        android:label="Profile" />
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.hilalkara.cryptotracker.ui.detail.DetailFragment"
-        android:label="fragment_detail"
+        android:label="Detail"
         tools:layout="@layout/fragment_detail">
         <argument
             android:name="coinId"

@@ -47,6 +47,14 @@ android {
         jvmTarget = "1.8"
     }
 
+
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.14"
+    }
+
     buildFeatures {
         viewBinding = true
     }
@@ -58,11 +66,20 @@ android {
 
 dependencies {
 
+    // Compose
+    implementation(libs.androidx.activity.compose)
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.ui.compose)
+    implementation(libs.androidx.ui.graphics.compose)
+    implementation(libs.androidx.ui.tooling.preview.compose)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.material3.android)
+    implementation(libs.androidx.runtime.livedata)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -90,6 +107,7 @@ dependencies {
     //Firebase
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.firestore)
+    implementation(libs.firebase.auth)
 
     //Worker
     implementation(libs.work.runtime)
@@ -101,5 +119,4 @@ dependencies {
 
     // Glide
     implementation(libs.glide)
-
 }
