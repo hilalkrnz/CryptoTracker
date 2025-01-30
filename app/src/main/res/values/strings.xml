@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">CryptoTracker</string>
+    <string name="register">Register</string>
+    <string name="login_tittle">Login to your Account</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="navigate_register_account">Click to create an account</string>
+    <string name="navigate_sign_in_account">Already have an account? Sign in.</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="logout">Log Out</string>
+    <string name="continue_with">or continue with</string>
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+
+    <string name="home">Home</string>
+    <string name="favorite">Favorite</string>
+    <string name="profile">Profile</string>
+    <string name="account_info">Account info’s</string>
+    <string name="registration_date">Registration date</string>
+    <string name="search_hint">Search</string>
+    <string name="refresh_hint">Refresh Interval</string>
+    <string name="empty_coin_list">No coins found. Try searching again.</string>
+    <string name="empty_favorite_list">Looks like you haven\'t added any favorites. Find your favorite coins now!</string>
+
+    <string name="hashing_algorithm_title">Hashing Algorithm</string>
+    <string name="description_title">Description</string>
+    <string name="last_updated_title">Last Updated</string>
+
+    <string name="passwords_do_not_match">Passwords do not match!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
