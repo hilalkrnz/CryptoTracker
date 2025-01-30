@@ -10,6 +10,15 @@ material = "1.12.0"
 activity = "1.8.0"
 constraintlayout = "2.1.4"
 
+#Lifecycle
+lifecycle = "2.6.2"
+fragmentKtx = "1.6.2"
+activityKtx = "1.8.0"
+
+#Fragment & Activity KTX
+lifecycleExtensions = "2.2.0"
+liveDataKtx = "2.6.2"
+
 #Retrofit
 retrofitVersion = "2.11.0"
 
@@ -32,6 +41,12 @@ firebaseBomVersion = "33.8.0"
 workRuntimeVersion = "2.8.1"
 hiltWork = "1.2.0"
 
+#Navigation
+navVersion = "2.8.5"
+
+#Glide
+glideVersion = "4.16.0"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -42,35 +57,53 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 
+#Lifecycle
+lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "liveDataKtx" }
+lifecycle-extensions = { group = "androidx.lifecycle", name = "lifecycle-extensions", version.ref = "lifecycleExtensions" }
+
+#Fragment & Activity KTX
+fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragmentKtx" }
+activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activityKtx" }
+
 #Retrofit
-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion"}
-retrofit-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitVersion"}
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion" }
+retrofit-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitVersion" }
 
 #Gson
-gson = { group = "com.google.code.gson", name = "gson", version.ref = "gsonVersion"}
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gsonVersion" }
 
 #DI
-dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltVersion"}
-dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltVersion"}
+dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltVersion" }
+dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltVersion" }
 
 #Firebase
-firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBomVersion"}
-firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore"}
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBomVersion" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore" }
 
 #Worker
-work-runtime = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "workRuntimeVersion"}
+work-runtime = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "workRuntimeVersion" }
 androidx-hilt-work = { group = "androidx.hilt", name = "hilt-work", version.ref = "hiltWork" }
+
+#Navigation Component
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navVersion" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navVersion" }
+
+#Glide
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glideVersion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 
 #KSP
-devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "kspVersion"}
+devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "kspVersion" }
 
 #DI
-dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hiltVersion"}
+dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hiltVersion" }
 
 #Google
-google-services = { id = "com.google.gms.google-services", version.ref = "googleServicesVersion"}
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServicesVersion" }
 
+#SafeArgs
+navigation-safe-args = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navVersion" }

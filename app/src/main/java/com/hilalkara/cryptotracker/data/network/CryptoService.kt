@@ -14,9 +14,12 @@ interface CryptoService {
     }
 
     @GET("$COINS/markets")
-    suspend fun getCryptoCurrencies(@Query("vs_currency") currency: String = String.CURRENCY): List<CoinsResponseItem>
+    suspend fun getCryptoCurrencies(
+        @Query("vs_currency") currency: String = String.CURRENCY,
+        @Query("ids") ids: String? = null
+    ): List<CoinsResponseItem>
 
-    @GET("$COINS/markets/id")
+    @GET("$COINS/{id}")
     suspend fun getCryptoById(@Path("id") id: String): CoinDetailResponse
 
 }

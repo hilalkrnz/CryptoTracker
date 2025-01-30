@@ -1,4 +1,4 @@
-package com.hilalkara.cryptotracker.data
+package com.hilalkara.cryptotracker.common
 
 sealed interface NetworkResponseState<out T : Any> {
     data object Loading : NetworkResponseState<Nothing>

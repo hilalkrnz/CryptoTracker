@@ -2,6 +2,7 @@ package com.hilalkara.cryptotracker.di.source
 
 import com.hilalkara.cryptotracker.data.source.RemoteDataSource
 import com.hilalkara.cryptotracker.data.source.RemoteDataSourceImpl
+import com.hilalkara.cryptotracker.data.source.firestore.FirestoreDataSource
 import com.hilalkara.cryptotracker.data.source.firestore.FirestoreDataSourceImpl
 import dagger.Binds
 import dagger.Module
@@ -23,5 +24,5 @@ abstract class DataSourceModule {
     @Singleton
     abstract fun bindFirestoreDataSource(
         firestoreDataSource: FirestoreDataSourceImpl
-    ): RemoteDataSource
+    ): FirestoreDataSource
 }

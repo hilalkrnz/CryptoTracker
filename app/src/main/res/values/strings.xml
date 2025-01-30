@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">CryptoTracker</string>
+    <string name="home">Home</string>
+    <string name="favorite">Favorite</string>
+    <string name="profile">Profile</string>
+    <string name="search_hint">Search</string>
+    <string name="refresh_hint">Refresh Interval</string>
+    <string name="empty_coin_list">No coins found. Try searching again.</string>
+    <string name="empty_favorite_list">Looks like you haven\'t added any favorites. Find your favorite coins now!</string>
+
+    <string name="hashing_algorithm_title">Hashing Algorithm</string>
+    <string name="description_title">Description</string>
+    <string name="last_updated_title">Last Updated</string>
 </resources>

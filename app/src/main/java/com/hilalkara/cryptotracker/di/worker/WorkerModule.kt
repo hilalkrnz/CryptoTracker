@@ -1,6 +1,6 @@
 package com.hilalkara.cryptotracker.di.worker
 
-import androidx.hilt.work.HiltWorkerFactory
+import androidx.work.WorkerFactory
 import com.hilalkara.cryptotracker.data.worker.ChildWorkerFactory
 import com.hilalkara.cryptotracker.data.worker.CoinSyncWorker
 import com.hilalkara.cryptotracker.data.worker.CoinSyncWorkerFactory
@@ -17,7 +17,7 @@ import dagger.multibindings.IntoMap
 abstract class WorkerModule {
 
     @Binds
-    abstract fun bindWorkerFactory(factory: CustomWorkerFactory): HiltWorkerFactory
+    abstract fun bindWorkerFactory(factory: CustomWorkerFactory): WorkerFactory
 
     @Binds
     @IntoMap

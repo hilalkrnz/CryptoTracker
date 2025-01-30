@@ -4,6 +4,8 @@ plugins {
     alias(libs.plugins.devtools.ksp)
     alias(libs.plugins.dagger.hilt.android)
     alias(libs.plugins.google.services)
+    alias(libs.plugins.navigation.safe.args)
+    id("kotlin-parcelize")
 }
 
 android {
@@ -46,6 +48,10 @@ android {
     }
 
     buildFeatures {
+        viewBinding = true
+    }
+
+    buildFeatures {
         buildConfig = true
     }
 }
@@ -60,6 +66,15 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //Lifecycle
+    implementation(libs.lifecycle.viewmodel.ktx)
+    implementation(libs.lifecycle.livedata.ktx)
+    implementation(libs.lifecycle.extensions)
+
+    //Fragment & Activity KTX
+    implementation(libs.fragment.ktx)
+    implementation(libs.activity.ktx)
 
     // Retrofit
     implementation(libs.retrofit)
@@ -79,5 +94,12 @@ dependencies {
     //Worker
     implementation(libs.work.runtime)
     implementation(libs.androidx.hilt.work)
+
+    // Navigation
+    implementation(libs.navigation.fragment)
+    implementation(libs.navigation.ui)
+
+    // Glide
+    implementation(libs.glide)
 
 }
