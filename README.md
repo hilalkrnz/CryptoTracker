@@ -8,15 +8,17 @@
 <table>
     <tr>
     <td>Splash</td>
-    <td>Sign In</td>
-    <td>Sign Up</td>
+    <td>Login</td>
+    <td>Register</td>
     <td>Home</td>
    </tr> 
   <tr>
     <td><img src="https://github.com/user-attachments/assets/c054cb40-c1fd-4d00-bdd1-edcb98c738cf" width="100%"></td>
-    <td><img src="https://github.com/user-attachments/assets/4fdffc3c-bfe7-40d8-bbb7-0d9b61f8f7b4" width="100%"></td>
-    <td><img src="https://github.com/user-attachments/assets/1ed540d9-bdb9-4372-9644-520cc3cd4bda" width="100%"></td>
+    <td><img src="https://github.com/user-attachments/assets/884b19bb-ec0e-467f-b0a9-02046fd36ab8" width="100%"></td>
+    <td><img src="https://github.com/user-attachments/assets/7883978d-1d83-4e56-a051-f3fb31ae2252" width="100%"></td>
     <td><img src="https://github.com/user-attachments/assets/634ca322-bc72-4cf9-9f67-c45bf5cb764d" width="100%"></td>
+  
+
 
 <table>
         <tr>
@@ -67,8 +69,8 @@ The app contains the usual `debug` and `release` build variants.
 Package structure of the project designed in the light of MVVM with Clean Architecture.
 - Common
 - Data
-- Domain
 - Dependency Injection
+- Domain
 - UI
 - Util
 
