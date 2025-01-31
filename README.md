@@ -55,9 +55,9 @@ together to create a complete app.
 
 # Architecture
 
-The **Poele** app follows the **MVVM** (Model-View-ViewModel) architectural design pattern and **Clean Architecture** design pattern. 
+The **Crypto Tracker** app follows the **MVVM** (Model-View-ViewModel) architectural design pattern and **Clean Architecture** design pattern. 
 
-![Architecture Diagram](https://github.com/user-attachments/assets/21b2167d-e1fc-452b-b1dc-de299791414e "Architecture Diagram")
+![Architecture Diagram](https://github.com/user-attachments/assets/0a3f39cf-01c8-40d1-80dd-222056a3d742 "Architecture Diagram")
 
 # Build
 
@@ -75,6 +75,7 @@ Package structure of the project designed in the light of MVVM with Clean Archit
 ![Package Structure](https://github.com/user-attachments/assets/70362dc1-00d3-485b-b7ea-2fab9020705a "Package Structure")
 
 ## Tech stack & Open-source libraries
+
 
 - Minimum SDK level 26
 - 100% [Kotlin](https://kotlinlang.org/) based + [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) and [Flow](https://developer.android.com/kotlin/flow)
