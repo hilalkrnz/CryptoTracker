@@ -17,7 +17,6 @@
     <td><img src="https://github.com/user-attachments/assets/884b19bb-ec0e-467f-b0a9-02046fd36ab8" width="100%"></td>
     <td><img src="https://github.com/user-attachments/assets/7883978d-1d83-4e56-a051-f3fb31ae2252" width="100%"></td>
     <td><img src="https://github.com/user-attachments/assets/634ca322-bc72-4cf9-9f67-c45bf5cb764d" width="100%"></td>
-  
 
 
 <table>
@@ -39,7 +38,7 @@
 ## Live Tracking Features
 &emsp;&emsp;<b>Register Loop</b>  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>Search Loop</b>  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>Favorite Loop</b>
 <p float="left">
-  <img src="https://github.com/user-attachments/assets/e7472fc0-b43a-4cf4-b430-438c6a50b123" width="200"/>&emsp;&emsp;&emsp;
+  <img src="https://github.com/user-attachments/assets/cce459e7-7721-42a8-8300-7f8004785c07" width="200"/>&emsp;&emsp;&emsp;
   <img src="https://github.com/user-attachments/assets/79ed661a-99f6-4986-bb27-42d929c55328" width="200" />&emsp;&emsp;&emsp;
   <img src="https://github.com/user-attachments/assets/d2742122-afe5-4c98-8b5c-024eaf85cc5b" width="200" />&emsp;&emsp;&emsp;
 </p>
